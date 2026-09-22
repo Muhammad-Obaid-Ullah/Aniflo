@@ -1,0 +1,197 @@
+.animes {
+  font-family: "K2D", sans-serif;
+
+  &-portion {
+    position: relative;
+
+    &-backgroundImage {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -100;
+
+      background-repeat: no-repeat;
+    }
+
+    &-bottomLine {
+      width: 82%;
+      height: 10rem;
+      background-color: transparent;
+
+      border-bottom: 2.5px solid $color-primary;
+      border-radius: 0px 0px 2rem 2rem;
+
+      position: absolute;
+      bottom: 97;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  &-recent {
+    margin-top: 20rem;
+    padding: 11rem 5rem;
+
+    min-height: 99rem;
+
+    &-backgroundImage {
+      background-image: 
+      // url(../../img/Images/anime-side-left-11.png),
+        url(../../img/Images/anime-side-right-16.png);
+      background-position: 
+      // -20% 0,
+        100% 0;
+      opacity: 6%;
+    }
+  }
+
+  &-airing {
+    margin-top: 20rem;
+    padding: 11rem 5rem;
+
+    min-height: 99rem;
+
+    &-backgroundImage {
+      background-image: url(../../img/Images/anime-side-left-11.png);
+      // url(../../img/Images/anime-side-left-13.png);
+      // ,url(../../img/Images/anime-side-right-14.png);
+      background-position: -20% 0;
+      //  -70% 0, 300% 0;
+      opacity: 6%;
+    }
+  }
+
+  &-upcomingAndTop {
+    margin-top: 25rem;
+
+    min-height: 126.2rem;
+
+    &-backgroundImage {
+      background-image: url(../../img/Images/anime-side-left-3.png),
+        url(../../img/Images/anime-side-right-2.png);
+      background-position: 0 0, 100% 0;
+      opacity: 5%;
+    }
+
+    &-container {
+      width: 95%;
+      height: 126.2rem;
+
+      padding: 0 5rem;
+
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 7fr 3fr;
+      column-gap: 5rem;
+
+      align-items: center;
+    }
+  }
+
+  &-upcoming {
+    position: relative;
+
+    padding: 7rem 0rem;
+
+    &-bottomLine {
+      bottom: 97;
+      width: 95%;
+    }
+  }
+
+  &-top {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+    background-color: rgba($color-dark--6, 0.1);
+  }
+
+  &-completed {
+    margin-top: 20rem;
+    padding: 11rem 5rem;
+
+    min-height: 99rem;
+
+    &-backgroundImage {
+      background-image: url(../../img/Images/anime-side-right-19.png);
+      background-position: 100% 0;
+      opacity: 6%;
+    }
+  }
+}
+
+// \/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\//\/\/\/\\/\/\\/\/\/\/\/\/\/\/\//\\/\/\/\
+// \/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\//\/\/\/\\/\/\\/\/\/\/\/\/\/\/\//\\/\/\/\
+// \/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\//\/\/\/\\/\/\\/\/\/\/\/\/\/\/\//\\/\/\/\
+// \/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\//\/\/\/\\/\/\\/\/\/\/\/\/\/\/\//\\/\/\/\
+// \/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\//\/\/\/\\/\/\\/\/\/\/\/\/\/\/\//\\/\/\/\
+//----------------------------STYLES
+
+.anime {
+  &-recent {
+    &-line {
+      width: 73%;
+    }
+  }
+
+  &-upcoming {
+    &-line {
+      width: 73%;
+    }
+
+    &-grid {
+      margin: 0 0;
+      min-height: 73rem;
+      width: 100%;
+
+      grid-template-columns: repeat(auto-fit, 16.95rem);
+      row-gap: 5rem;
+      align-items: start;
+    }
+  }
+
+  &-top {
+    &-heading {
+      text-align: center;
+      font-size: 2.39583333333rem;
+      margin: 3rem 0;
+    }
+
+    &-flex {
+      flex: 1;
+    }
+
+    &-btnBox {
+      width: 100%;
+      padding: 0;
+      margin: 3rem 0;
+      border: none;
+
+      text-align: center;
+
+      &-btn {
+        background-color: transparent;
+        padding: 0;
+      }
+    }
+  }
+
+  &-airing {
+    &-line {
+      width: 73%;
+    }
+  }
+
+  &-completed {
+    &-line {
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+.nav {
+  height: 8.5vh;
+  padding: 0rem 5rem;
+  border-bottom: 0.1rem solid $color-white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+
+  .logo {
+    width: 9rem;
+
+    display: block;
+  }
+
+  &-contents {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+
+    &-center {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+
+  .search {
+    &-box {
+      position: relative;
+    }
+
+    &-bar {
+      font-size: 1.6rem;
+      font-family: inherit;
+      color: $color-dark--light;
+      letter-spacing: inherit;
+      font-weight: 500;
+
+      height: 3.5rem;
+      width: 50rem;
+      padding: 2rem 1rem 2rem 4.5rem;
+      border: none;
+      border-radius: 0.5rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &-results {
+      width: 50rem;
+      // height: 50rem;
+      border-radius: 0.5rem;
+      background-color: yellow;
+
+      position: absolute;
+      top: 4.5rem;
+    }
+  }
+
+  &-icon {
+    font-size: 2.5rem;
+
+    &-search {
+      color: $color-dark--light;
+
+      position: absolute;
+      top: 50%;
+      left: 10;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  &-btn {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.5;
+    color: $color-white;
+
+    cursor: pointer;
+    z-index: 10;
+
+    &-filter {
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.5rem 2rem;
+      background-color: $color-dark--light;
+
+      display: inline-block;
+
+      position: absolute;
+      right: 7;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &-random,
+    &-watch {
+      &:link,
+      &:visited,
+      &:active {
+        text-decoration: none;
+        font-size: 1.9rem;
+
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        transition: all 0.2s;
+      }
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &-elements {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &-element-link {
+    &:link,
+    &:visited,
+    &:active {
+      font-size: 1.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: $color-white;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      border-left: 2px solid $color-primary;
+      transition: all 0.2s;
+
+      position: relative;
+      z-index: 10;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    &-5 {
+      &:link,
+      &:visited {
+        padding: 0.5rem 2rem;
+        border-radius: 0.5rem;
+        background-color: $color-primary-light;
+
+        color: $color-dark;
+        border: none;
+        display: inline-block;
+
+        transition: all 0.2s;
+      }
+
+      &:hover {
+        background-color: $color-primary;
+        color: $color-dark;
+      }
+
+      &:active {
+        box-shadow: none;
+      }
+    }
+  }
+}

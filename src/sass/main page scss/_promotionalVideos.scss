@@ -1,0 +1,148 @@
+.promotionalVideos {
+  margin-top: 33rem;
+  position: relative;
+
+  min-height: 30.5rem;
+
+  &-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &-heading {
+    width: 86%;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    font-size: 3.125rem;
+    font-weight: 700;
+    text-align: center;
+
+    letter-spacing: 0;
+  }
+
+  &-container {
+    width: 86%;
+    margin-left: auto;
+
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 4rem;
+
+    &-box {
+      border-left: 2.5px solid $color-primary;
+      padding: 1rem 1rem;
+      border-radius: 15px 0px 0px 15px;
+
+      flex: 1;
+
+      &-thumbnailBox {
+        position: relative;
+        cursor: pointer;
+
+        padding-bottom: 75%;
+
+        border-radius: 5px;
+        overflow: hidden;
+
+        &:hover {
+          .promotionalVideos-container-box-thumbnailBox-thumbnailGradient {
+            background-color: rgba($color-dark--1, 0.45);
+          }
+
+          .promotionalVideos-container-box-thumbnailBox-iconPlay {
+            transform: translate(-50%, -50%) scale(1.05);
+          }
+        }
+
+        &-thumbnail {
+          width: 100%;
+          height: 100%;
+
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          object-fit: cover;
+        }
+
+        &-iconPlay {
+          font-size: 4.5rem;
+          color: $color-white;
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+
+          transform: translate(-50%, -50%);
+          z-index: 3;
+
+          transition: all 0.3s;
+        }
+
+        &-thumbnailGradient {
+          width: 100%;
+          height: 100%;
+          background-color: rgba($color-dark--1, 0.55);
+
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          transition: all 0.3s;
+        }
+      }
+
+      &-title {
+        font-family: "K2D", sans-serif;
+        font-size: 1.5625rem;
+        font-weight: 600;
+        line-height: 1.2;
+
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &-sideImageBox {
+    position: absolute;
+
+    &-left {
+      top: -200;
+      left: -90;
+
+      width: 25%;
+    }
+
+    &-image {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &-iframeBox {
+    width: 55%;
+    height: 58%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-top: 3px solid $color-primary;
+    border-bottom: 3px solid $color-primary;
+
+    padding: 2rem;
+    border-radius: 2rem;
+
+    &-iframe {
+      width: 100%;
+      height: 100%;
+
+      border-radius: 1rem;
+    }
+  }
+}

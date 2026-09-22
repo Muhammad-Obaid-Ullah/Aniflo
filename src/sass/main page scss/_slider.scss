@@ -1,0 +1,479 @@
+.slider-box {
+  width: 100vw;
+  height: 91.5vh;
+
+  position: relative;
+
+  z-index: 5;
+}
+
+.slider {
+  width: 83vw;
+  height: 80vh;
+  border-radius: 2rem;
+  font-size: 1.8rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 13;
+  // overflow-x: hidden;
+}
+
+.slide {
+  width: 77vw;
+  height: 72vh;
+  padding: 3rem 7rem;
+  color: $color-white;
+
+  box-shadow: 0rem 0rem 1.5rem $color-white;
+  backdrop-filter: blur(35);
+  border-radius: 2rem;
+
+  display: flex;
+  gap: 2rem;
+
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  z-index: 10;
+  overflow: hidden;
+
+  // transform: translate(-50%, -50%);
+  // transition: transform 2.5s ease-out;
+
+  &-1 {
+    z-index: 15;
+    // display: none;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+
+      opacity: 0.1;
+
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url(../../img/Images/Bakugo\ vs\ mydoria.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0% 0%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      z-index: -1000;
+    }
+  }
+
+  &-2 {
+    // background-color: red;
+
+    // 60%
+    // transform: translate(60%, -50%);
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+
+      opacity: 0.09;
+
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url(../../img/Images/DB\ tournament\ team.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0% 0%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      z-index: -1000;
+    }
+  }
+
+  &-3 {
+    // background-color: blue;
+
+    // 170%
+    // transform: translate(170%, -50%);
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+
+      opacity: 0.1;
+
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url(../../img/Images/wp7771873-one-piece-manga-panel-wallpapers.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      z-index: -1000;
+    }
+  }
+
+  &-4 {
+    //280%
+    // background-color: purple;
+    // transform: translate(280%, -50%);
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+
+      opacity: 0.1;
+
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url(../../img/Images/a.png);
+      // background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      z-index: -1000;
+    }
+  }
+
+  &-info-box {
+    // flex: 67%;
+    // background-color: yellow;
+    // padding: 0rem 5rem 0rem 4rem;
+
+    width: 65%;
+    padding-left: 2rem;
+  }
+
+  &-heading {
+    font-family: "K2D", sans-serif;
+    font-weight: 800;
+    font-size: 8rem;
+    -webkit-text-stroke: 0.4rem $color-dark;
+    letter-spacing: -1;
+    margin-top: 0.8rem;
+  }
+
+  &-imp-attributes {
+    padding: 1.2rem 0rem 1.2rem 2.5rem;
+    margin-top: 2.5rem;
+
+    border-left: 0.2rem solid $color-primary;
+
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+
+    .rating {
+      font-size: 1.2rem;
+      color: $color-white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      border: 0.1rem solid $color-white;
+    }
+
+    .season {
+      font-size: 1.6rem;
+
+      display: flex;
+      align-items: flex-end;
+      gap: 0.7rem;
+    }
+
+    .score {
+      font-size: 1.6rem;
+
+      display: flex;
+      align-items: flex-end;
+      gap: 0.7rem;
+    }
+
+    .slide-icon {
+      font-size: 2.5rem;
+
+      &-calendar {
+        color: $color-primary;
+      }
+
+      &-star {
+        color: $color-yellow;
+      }
+    }
+  }
+
+  &-description {
+    margin-top: 4rem;
+    width: 100%;
+    border-left: 0.2rem solid $color-primary;
+    padding: 1.2rem 5rem 1.2rem 2.5rem;
+
+    &-text {
+      height: 13.5rem;
+      line-height: 1.5;
+
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+      white-space: normal;
+    }
+
+    &-attributes {
+      margin-top: 4.5rem;
+
+      display: grid;
+      grid-template-columns: max-content max-content;
+      column-gap: 10rem;
+      row-gap: 2.5rem;
+
+      .bullet {
+        color: $color-primary;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &-btn-box {
+    margin-top: 4rem;
+    padding-left: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 15.5rem;
+  }
+
+  &-btn {
+    font-size: 1.8rem;
+    border: none;
+    padding: 1.3rem 2.3rem;
+    border-radius: 50rem;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+
+    transition: all 0.2s;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &-detail {
+      background-color: transparent;
+      border: 0.1rem solid $color-white;
+      color: $color-white;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-dark;
+      }
+    }
+
+    &-movement {
+      gap: 0;
+      font-size: 3.5rem;
+      background-color: transparent;
+      color: $color-primary;
+      padding: 1.2rem 1.2rem;
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 15;
+
+      &::before,
+      &::after {
+        content: "";
+        height: 0.4rem;
+        width: 3.5rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        position: absolute;
+
+        transition: all 0.2s;
+
+        // animation: arrowsAnimation 2s infinite;
+      }
+
+      .line {
+        height: 14rem;
+        border-radius: 50%;
+        width: 0.3rem;
+
+        background-color: $color-white;
+      }
+    }
+
+    &-forward {
+      right: 95;
+
+      &::before {
+        transform: rotate(47deg);
+        transform-origin: left;
+        top: 55;
+        left: 25;
+      }
+
+      &::after {
+        transform: rotate(-47deg);
+        transform-origin: left;
+        bottom: 55;
+        left: 25;
+      }
+    }
+
+    &-previous {
+      left: 95;
+
+      &::before {
+        transform: rotate(-47deg);
+        transform-origin: right;
+        top: 55;
+        right: 25;
+      }
+
+      &::after {
+        transform: rotate(47deg);
+        transform-origin: right;
+        bottom: 55;
+        right: 25;
+      }
+    }
+  }
+
+  &-image-box {
+    width: 35%;
+  }
+
+  &-image {
+    display: block;
+    align-self: flex-start;
+
+    &-1 {
+      // width: 100%;
+      // transform: translate(-3%, -1%);
+
+      // width: 114%;
+      transform: translate(-10%, -4%);
+
+      // transform: translate(-10%, -4%);
+
+      // display: none;
+    }
+
+    &-2 {
+      width: 95%;
+      transform: translate(3%, -1%);
+    }
+
+    &-3 {
+      width: 170%;
+      transform: translate(-36%, -17%);
+    }
+
+    &-4 {
+      width: 130%;
+      transform: translate(-12%, -5%);
+    }
+  }
+
+  &-bullet-box {
+    position: absolute;
+    bottom: 35;
+    left: 50%;
+    z-index: 10;
+
+    transform: translateX(-50%);
+    // background-color: orangered;
+
+    backdrop-filter: blur(100);
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem;
+  }
+
+  &-bullets {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &-bullet {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    border: 0.3rem solid $color-dark;
+    border-radius: 50%;
+
+    background-color: $color-white;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.smoke {
+  &-box {
+    z-index: -100;
+    width: 100%;
+    height: 100rem;
+    opacity: 0.7;
+
+    background-image: url(../../img/Images/smoke-33809.png);
+    background-size: 200%;
+    background-position: top;
+    background-repeat: repeat-x;
+
+    position: absolute;
+    bottom: -240;
+
+    animation: smokeAnimation linear 10s infinite;
+  }
+}
+
+@keyframes smokeAnimation {
+  0% {
+    background-position: -200% bottom;
+  }
+  100% {
+    background-position: 0% bottom;
+  }
+}

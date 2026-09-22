@@ -1,0 +1,14 @@
+.header {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0, 0.15),
+      rgb(0, 0, 0, 0.15)
+    ),
+    url(../../img/Images/7.jpg);
+  background-size: cover;
+
+  overflow: hidden;
+}

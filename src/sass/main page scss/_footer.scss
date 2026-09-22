@@ -1,0 +1,148 @@
+.footer {
+  font-family: "K2D", sans-serif;
+  margin-top: 35rem;
+  padding: 5rem 5rem 0rem 5rem;
+
+  display: flex;
+  justify-content: center;
+  // gap: 0rem;
+
+  border-top: 1px solid $color-primary;
+
+  &-contentBox {
+    align-self: center;
+    &-logoAndAbout {
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+
+      &-logoBox {
+        &-link {
+          &:link,
+          &:visited,
+          &:hover,
+          &:active {
+            color: $color-dark--1;
+            text-decoration: none;
+          }
+        }
+
+        &-logo {
+          width: 9rem;
+
+          display: block;
+        }
+      }
+
+      &-aboutUs {
+        width: 70%;
+        padding: 2rem 0rem 2rem 5rem;
+        border-left: 1px solid $color-primary;
+
+        &-heading {
+          font-size: 1.875rem;
+          font-weight: 700;
+        }
+
+        &-text {
+          font-size: 1.25rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &-grid {
+      margin-top: 7rem;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+
+      &-famousSites {
+        &-heading {
+          font-size: 1.875rem;
+        }
+
+        &-list {
+          list-style: none;
+          font-size: 1.25rem;
+
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          padding: 1.5rem;
+
+          &-item-link {
+            &:link,
+            &:visited,
+            &:hover,
+            &:active {
+              text-decoration: none;
+              color: $color-dark;
+            }
+          }
+        }
+      }
+
+      &-contactUs {
+        justify-self: center;
+
+        &-heading {
+          font-size: 1.875rem;
+        }
+
+        &-list {
+          list-style: none;
+          font-size: 1.25rem;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          gap: 1rem;
+
+          padding: 1.5rem;
+        }
+      }
+
+      &-madeWith {
+        justify-self: center;
+
+        &-heading {
+          font-size: 1.875rem;
+        }
+
+        &-list {
+          list-style: none;
+          font-size: 1.25rem;
+
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          padding: 1.5rem;
+        }
+      }
+    }
+
+    &-copyright {
+      margin-top: 7rem;
+      font-size: 1.15rem;
+    }
+
+    &-storage {
+      margin-top: 1rem;
+      font-size: 1.15rem;
+    }
+  }
+
+  &-imageBox {
+    display: flex;
+    justify-content: right;
+
+    &-image {
+      width: 70%;
+      display: block;
+    }
+  }
+}

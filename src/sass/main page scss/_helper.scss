@@ -1,0 +1,80 @@
+.top1 {
+  &-number {
+    -webkit-text-stroke: 2px $color-top-1;
+  }
+
+  &-box {
+    box-shadow: 0rem 0rem 0.8rem $color-top-1;
+  }
+
+  &-backgroundColor {
+    &::before {
+      background-color: $color-top-1;
+    }
+  }
+
+  &-rightLine {
+    &::before {
+      background-color: $color-top-1;
+    }
+  }
+}
+
+.top2 {
+  &-number {
+    -webkit-text-stroke: 2px $color-top-2;
+  }
+
+  &-box {
+    box-shadow: 0rem 0rem 0.8rem $color-top-2;
+  }
+
+  &-backgroundColor {
+    &::before {
+      content: "";
+      background-color: $color-top-2;
+    }
+  }
+
+  &-rightLine {
+    &::before {
+      background-color: $color-top-2;
+    }
+  }
+}
+
+.top3 {
+  &-number {
+    -webkit-text-stroke: 2px $color-top-3;
+  }
+
+  &-box {
+    box-shadow: 0rem 0rem 0.8rem $color-top-3;
+  }
+
+  &-backgroundColor {
+    &::before {
+      content: "";
+      background-color: $color-top-3;
+    }
+  }
+
+  &-rightLine {
+    &::before {
+      background-color: $color-top-3;
+    }
+  }
+}
+
+.sliderSpinnerColor div {
+  background-color: $color-primary;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.activeSlideDot {
+  background-color: $color-primary;
+}

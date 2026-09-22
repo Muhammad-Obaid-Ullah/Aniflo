@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 60%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.3;
+
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-dark;
+}

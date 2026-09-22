@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:wght@200;300;400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700;800&family=Monomaniac+One:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"></script>
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/src/img/Logos/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="src/sass/main page scss/main.scss" />
+
+    <script
+      type="module"
+      defer
+      src="/src/js/main page js/controller.js"
+    ></script>
+    <title>AnimeFlo</title>
+  </head>
+  <body class="main">
+    <!-- Header -->
+    <header class="header">
+      <!-- Navigation -->
+      <nav class="nav">
+        <!-- Logo -->
+        <div class="logo-box">
+          <a href="#" class="logo-link"
+            ><img
+              class="logo"
+              src="/src/img/Logos/animeflo-high-resolution-logo-white-on-transparent-background.png"
+              alt="AnimeFlo Logo"
+          /></a>
+        </div>
+
+        <div class="nav-contents">
+          <div class="nav-contents-center">
+            <!-- Search System-->
+            <div class="search-box">
+              <ion-icon
+                class="nav-icon nav-icon-search"
+                name="search-outline"
+              ></ion-icon>
+              <input
+                type="text"
+                class="search-bar"
+                placeholder="Search anime..."
+              />
+              <button class="nav-btn nav-btn-filter">Filter</button>
+            </div>
+
+            <!-- Random and watch button -->
+            <a href="#" class="nav-btn nav-btn-random"
+              ><ion-icon
+                class="nav-icon nav-icon-random"
+                name="shuffle-outline"
+              ></ion-icon>
+              <span>Random</span>
+            </a>
+
+            <a
+              href="https://9anime.gs/home"
+              target="_blank"
+              class="nav-btn nav-btn-watch"
+              ><ion-icon
+                class="nav-icon nav-icon-watch"
+                name="play-outline"
+              ></ion-icon>
+              <span>Watch</span>
+            </a>
+          </div>
+
+          <!-- Navigation Elements -->
+          <ul class="nav-elements">
+            <li class="nav-element nav-element-1">
+              <a
+                href="#recent-animes"
+                class="nav-element-link nav-element-link-1"
+                >Recent Anime</a
+              >
+            </li>
+            <li class="nav-element nav-element-2">
+              <a
+                href="#airing-animes"
+                class="nav-element-link nav-element-link-2"
+                >Currently Airing</a
+              >
+            </li>
+            <li class="nav-element nav-element-3">
+              <a
+                href="#upcoming-animes"
+                class="nav-element-link nav-element-link-3"
+                >Upcoming</a
+              >
+            </li>
+            <li class="nav-element nav-element-4">
+              <a
+                href="#completed-animes"
+                class="nav-element-link nav-element-link-4"
+                >Completed</a
+              >
+            </li>
+
+            <li class="nav-element nav-element-5">
+              <a href="#top-animes" class="nav-element-link nav-element-link-5"
+                >Top Anime</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Main Slider Box -->
+      <div class="slider-box">
+        <!-- Slider Window -->
+        <div class="slider">
+          <div class="lds-ellipsis sliderSpinnerColor">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <!-- Slide 1 -->
+          <!-- <div class="slide slide-1">
+            <div class="slide-info-box slide-info-box-1">
+              <h2 class="slide-heading slide-heading-1">My Hero Academia</h2>
+              <div class="slide-imp-attributes slide-imp-attributes-1">
+                <div class="rating">PG-13 - Teens 13 or older</div>
+
+                <div class="season">
+                  <ion-icon
+                    class="slide-icon slide-icon-calendar"
+                    name="calendar-outline"
+                  ></ion-icon>
+                  <span>Spring, 2016</span>
+                </div>
+
+                <div class="score">
+                  <ion-icon
+                    class="slide-icon slide-icon-star"
+                    name="star"
+                  ></ion-icon>
+                  <span>8.5 by 12091 reviews</span>
+                </div>
+              </div>
+
+              <div class="slide-description slide-description-1">
+                <div class="slide-description-text slide-description-text-1">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facilis, nobis non! Delectus ipsum illo distinctio maiores!
+                  Nam illum eos aperiam quod deserunt non sapiente, repellat
+                  doloribus quidem nostrum! doloremque. Lorem ipsum dolor sit
+                  amet, consectetur adipisicing elit. Minus, perferendis quasi,
+                  iure eos temporibus sequi, ullam quibusdam omnis atque
+                  accusantium quod? Ipsam nisi nam, officiis ipsa accusamus
+                  labore accusantium eaque!
+                </div>
+                <div
+                  class="slide-description-attributes slide-description-attributes-1"
+                >
+                  <div class="type">
+                    <span class="bullet">&#x2022;</span>Type: TV
+                  </div>
+                  <div class="episodes">
+                    <span class="bullet">&#x2022;</span>Episodes: 13
+                  </div>
+                  <div class="status">
+                    <span class="bullet">&#x2022;</span>Status: Finished airing
+                  </div>
+                  <div class="studio">
+                    <span class="bullet">&#x2022;</span>Studio: Mappa
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide-btn-box slide-btn-box-1">
+                <button class="slide-btn slide-btn-detail">
+                  <span>Details</span>
+                  <ion-icon
+                    class="slide-icon slide-icon-arrow"
+                    name="chevron-forward-outline"
+                  ></ion-icon>
+                </button>
+                <a
+                  href="https://9anime.gs/watch/my-hero-academia.jvl2/ep-1"
+                  class="comp-btn-primary slide-btn slide-btn-watch"
+                >
+                  <span>Watch</span>
+                  <ion-icon
+                    class="slide-icon slide-icon-watch"
+                    name="play-outline"
+                  ></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <div class="slide-image-box slide-image-box-1">
+              <img
+                src="/src/img/Images/slideImage-1.png"
+                alt="deku"
+                class="slide-image slide-image-1"
+              />
+            </div>
+          </div> -->
+
+          <!-- Slide 2 -->
+          <!-- <div class="slide slide-2">
+            <div class="slide-info-box slide-info-box-2">
+              <h2 class="slide-heading slide-heading-2">Dragon Ball Super</h2>
+              <div class="slide-imp-attributes slide-imp-attributes-2">
+                <div class="rating">PG-13</div>
+
+                <div class="season">
+                  <ion-icon
+                    class="slide-icon slide-icon-calendar"
+                    name="calendar-outline"
+                  ></ion-icon>
+                  <span>Spring, 2016</span>
+                </div>
+
+                <div class="score">
+                  <ion-icon
+                    class="slide-icon slide-icon-star"
+                    name="star"
+                  ></ion-icon>
+                  <span>8.5 by 12091 reviews</span>
+                </div>
+              </div>
+
+              <div class="slide-description slide-description-2">
+                <div class="slide-description-text slide-description-text-2">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facilis, nobis non! Delectus ipsum illo distinctio maiores!
+                  Nam illum eos aperiam quod deserunt non sapiente, repellat
+                  doloribus quidem nostrum! doloremque. Lorem ipsum dolor sit
+                  amet, consectetur adipisicing elit. Minus, perferendis quasi,
+                  iure eos temporibus sequi, ullam quibusdam omnis atque
+                  accusantium quod? Ipsam nisi nam, officiis ipsa accusamus
+                  labore accusantium eaque!
+                </div>
+                <div
+                  class="slide-description-attributes slide-description-attributes-2"
+                >
+                  <div class="type">
+                    <span class="bullet">&#x2022;</span>Type: TV
+                  </div>
+                  <div class="episodes">
+                    <span class="bullet">&#x2022;</span>Episodes: 13
+                  </div>
+                  <div class="status">
+                    <span class="bullet">&#x2022;</span>Status: Completed
+                  </div>
+                  <div class="studio">
+                    <span class="bullet">&#x2022;</span>Studio: Mappa
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide-btn-box slide-btn-box-2">
+                <button class="slide-btn slide-btn-detail">
+                  <span>Details</span>
+                  <ion-icon
+                    class="slide-icon slide-icon-arrow"
+                    name="chevron-forward-outline"
+                  ></ion-icon>
+                </button>
+                <a
+                  href="https://9anime.gs/watch/dragon-ball-super.7jly/ep-1"
+                  class="comp-btn-primary slide-btn slide-btn-watch"
+                >
+                  <span>Watch</span>
+                  <ion-icon
+                    class="slide-icon slide-icon-watch"
+                    name="play-outline"
+                  ></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <div class="slide-image-box slide-image-box-2">
+              <img
+                src="/src/img/Images/slideImage-2.png"
+                alt="deku"
+                class="slide-image slide-image-2"
+              />
+            </div>
+          </div> -->
+
+          <!-- Slide 3 -->
+          <!-- <div class="slide slide-3">
+            <div class="slide-info-box slide-info-box-3">
+              <h2 class="slide-heading slide-heading-3">One Piece</h2>
+              <div class="slide-imp-attributes slide-imp-attributes-3">
+                <div class="rating">PG-13</div>
+
+                <div class="season">
+                  <ion-icon
+                    class="slide-icon slide-icon-calendar"
+                    name="calendar-outline"
+                  ></ion-icon>
+                  <span>Spring, 2016</span>
+                </div>
+
+                <div class="score">
+                  <ion-icon
+                    class="slide-icon slide-icon-star"
+                    name="star"
+                  ></ion-icon>
+                  <span>8.5 by 12091 reviews</span>
+                </div>
+              </div>
+
+              <div class="slide-description slide-description-3">
+                <div class="slide-description-text slide-description-text-3">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facilis, nobis non! Delectus ipsum illo distinctio maiores!
+                  Nam illum eos aperiam quod deserunt non sapiente, repellat
+                  doloribus quidem nostrum! doloremque. Lorem ipsum dolor sit
+                  amet, consectetur adipisicing elit. Minus, perferendis quasi,
+                  iure eos temporibus sequi, ullam quibusdam omnis atque
+                  accusantium quod? Ipsam nisi nam, officiis ipsa accusamus
+                  labore accusantium eaque!
+                </div>
+                <div
+                  class="slide-description-attributes slide-description-attributes-3"
+                >
+                  <div class="type">
+                    <span class="bullet">&#x2022;</span>Type: TV
+                  </div>
+                  <div class="episodes">
+                    <span class="bullet">&#x2022;</span>Episodes: 13
+                  </div>
+                  <div class="status">
+                    <span class="bullet">&#x2022;</span>Status: Completed
+                  </div>
+                  <div class="studio">
+                    <span class="bullet">&#x2022;</span>Studio: Mappa
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide-btn-box slide-btn-box-3">
+                <button class="slide-btn slide-btn-detail">
+                  <span>Details</span>
+                  <ion-icon
+                    class="slide-icon slide-icon-arrow"
+                    name="chevron-forward-outline"
+                  ></ion-icon>
+                </button>
+                <a
+                  href="https://9anime.gs/watch/one-piece.ov8/ep-1"
+                  class="comp-btn-primary slide-btn slide-btn-watch"
+                >
+                  <span>Watch</span>
+                  <ion-icon
+                    class="slide-icon slide-icon-watch"
+                    name="play-outline"
+                  ></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <div class="slide-image-box slide-image-box-3">
+              <img
+                src="/src/img/Images/slideImage-3.png"
+                alt="deku"
+                class="slide-image slide-image-3"
+              />
+            </div>
+          </div> -->
+
+          <!-- Slide 4 -->
+          <!-- <div class="slide slide-4">
+            <div class="slide-info-box slide-info-box-4">
+              <h2 class="slide-heading slide-heading-4">Tokyo Ghoul</h2>
+              <div class="slide-imp-attributes slide-imp-attributes-4">
+                <div class="rating">PG-13</div>
+
+                <div class="season">
+                  <ion-icon
+                    class="slide-icon slide-icon-calendar"
+                    name="calendar-outline"
+                  ></ion-icon>
+                  <span>Spring, 2016</span>
+                </div>
+
+                <div class="score">
+                  <ion-icon
+                    class="slide-icon slide-icon-star"
+                    name="star"
+                  ></ion-icon>
+                  <span>8.5 by 12091 reviews</span>
+                </div>
+              </div>
+
+              <div class="slide-description slide-description-4">
+                <div class="slide-description-text slide-description-text-4">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facilis, nobis non! Delectus ipsum illo distinctio maiores!
+                  Nam illum eos aperiam quod deserunt non sapiente, repellat
+                  doloribus quidem nostrum! doloremque. Lorem ipsum dolor sit
+                  amet, consectetur adipisicing elit. Minus, perferendis quasi,
+                  iure eos temporibus sequi, ullam quibusdam omnis atque
+                  accusantium quod? Ipsam nisi nam, officiis ipsa accusamus
+                  labore accusantium eaque!
+                </div>
+                <div
+                  class="slide-description-attributes slide-description-attributes-4"
+                >
+                  <div class="type">
+                    <span class="bullet">&#x2022;</span>Type: TV
+                  </div>
+                  <div class="episodes">
+                    <span class="bullet">&#x2022;</span>Episodes: 13
+                  </div>
+                  <div class="status">
+                    <span class="bullet">&#x2022;</span>Status: Completed
+                  </div>
+                  <div class="studio">
+                    <span class="bullet">&#x2022;</span>Studio: Mappa
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide-btn-box slide-btn-box-4">
+                <button class="slide-btn slide-btn-detail">
+                  <span>Details</span>
+                  <ion-icon
+                    class="slide-icon slide-icon-arrow"
+                    name="chevron-forward-outline"
+                  ></ion-icon>
+                </button>
+                <a
+                  href="https://9anime.gs/watch/tokyo-ghoul.7w06/ep-1"
+                  class="comp-btn-primary slide-btn slide-btn-watch"
+                >
+                  <span>Watch</span>
+                  <ion-icon
+                    class="slide-icon slide-icon-watch"
+                    name="play-outline"
+                  ></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <div class="slide-image-box slide-image-box-4">
+              <img
+                src="/src/img/Images/slideImage-4.png"
+                alt="deku"
+                class="slide-image slide-image-4"
+              />
+            </div>
+          </div> -->
+        </div>
+
+        <!-- Buttons, Smoke Screen and Slides dots -->
+
+        <!-- Button for moving slides left or right -->
+        <button class="slide-btn slide-btn-movement slide-btn-forward">
+          <span class="line"></span>
+          <ion-icon
+            class="slide-icon slide-icon-forward"
+            name="chevron-forward-outline"
+          ></ion-icon>
+        </button>
+
+        <button class="slide-btn slide-btn-movement slide-btn-previous">
+          <ion-icon
+            class="slide-icon slide-icon-previous"
+            name="chevron-back-outline"
+          ></ion-icon>
+          <span class="line"></span>
+        </button>
+
+        <!-- Slides dots -->
+        <div class="slide-bullet-box">
+          <ul class="slide-bullets">
+            <li class="slide-bullet slide-bullet-1" data-slide="0"></li>
+            <li class="slide-bullet slide-bullet-2" data-slide="1"></li>
+            <li class="slide-bullet slide-bullet-3" data-slide="2"></li>
+            <li class="slide-bullet slide-bullet-4" data-slide="3"></li>
+          </ul>
+        </div>
+
+        <!-- Smoke Screen -->
+        <div class="smoke-box smoke-box-1"></div>
+      </div>
+    </header>
+
+    <!-- All Animes Section -->
+    <section class="animes">
+      <!-- Recent Animes Section  -->
+      <div class="animes-portion animes-recent" id="recent-animes">
+        <div
+          class="animes-portion-backgroundImage animes-recent-backgroundImage"
+        ></div>
+
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <!-- Recent anime grid -->
+        <ul class="comp-anime-grid anime-recent-grid">
+          <div class="comp-anime-heading-box anime-recent-heading-box">
+            <div class="comp-anime-heading anime-recent-heading">
+              Recent Animes
+            </div>
+
+            <div class="comp-anime-heading-line anime-recent-line"></div>
+            <button
+              class="comp-anime-btnBox-btn anime-recent-btnBox-btn"
+              data-category="recent"
+            >
+              Show More &rarr;
+            </button>
+          </div>
+        </ul>
+
+        <div class="animes-portion-bottomLine animes-recent-bottomLine"></div>
+      </div>
+
+      <!-- AtringSection -->
+      <!-- AtringSection -->
+      <!-- AtringSection -->
+      <!-- AtringSection -->
+      <!-- AtringSection -->
+      <!-- AtringSection -->
+      <!-- AtringSection -->
+      <!-- AtringSection -->
+      <div class="animes-portion animes-airing" id="airing-animes">
+        <div
+          class="animes-portion-backgroundImage animes-airing-backgroundImage"
+        ></div>
+
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- grid which will contain all the previews -->
+        <ul class="comp-anime-grid anime-airing-grid">
+          <div class="comp-anime-heading-box anime-airing-heading-box">
+            <div class="comp-anime-heading anime-airing-heading">
+              Currently Airing
+            </div>
+
+            <div class="comp-anime-heading-line anime-airing-line"></div>
+            <button
+              class="comp-anime-btnBox-btn anime-airing-btnBox-btn"
+              data-category="airing"
+            >
+              Show More &rarr;
+            </button>
+          </div>
+        </ul>
+
+        <div class="animes-portion-bottomLine animes-airing-bottomLine"></div>
+      </div>
+
+      <!-- Upcoming And Top Section -->
+      <!-- Upcoming And Top Section -->
+      <!-- Upcoming And Top Section -->
+      <!-- Upcoming And Top Section -->
+      <!-- Upcoming And Top Section -->
+      <!-- Upcoming And Top Section -->
+      <!-- Upcoming And Top Section -->
+      <!-- Upcoming And Top Section -->
+      <!-- Upcoming And Top Section -->
+      <!-- Upcoming And Top Section -->
+      <!-- Upcoming And Top Section -->
+      <div
+        class="animes-portion animes-upcomingAndTop"
+        id="upcomingAndTop-animes"
+      >
+        <div
+          class="animes-portion-backgroundImage animes-upcomingAndTop-backgroundImage"
+        ></div>
+
+        <div class="animes-upcomingAndTop-container">
+          <div class="animes-upcoming" id="upcoming-animes">
+            <div class="lds-ellipsis">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <!-- grid which will contain all the previews -->
+            <ul class="comp-anime-grid anime-upcoming-grid">
+              <div class="comp-anime-heading-box anime-upcoming-heading-box">
+                <div class="comp-anime-heading anime-upcoming-heading">
+                  Upcoming
+                </div>
+
+                <div class="comp-anime-heading-line anime-upcoming-line"></div>
+                <button
+                  class="comp-anime-btnBox-btn anime-upcoming-btnBox-btn"
+                  data-category="upcoming"
+                >
+                  Show More &rarr;
+                </button>
+              </div>
+            </ul>
+
+            <div
+              class="animes-portion-bottomLine animes-upcoming-bottomLine"
+            ></div>
+          </div>
+
+          <div class="animes-top" id="top-animes">
+            <div class="lds-ellipsis">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+
+            <div class="comp-anime-heading anime-top-heading">Top Anime</div>
+
+            <!-- VERTICAL LIST OF ALL THE ANIME -->
+            <ul class="comp-anime-flex anime-top-flex"></ul>
+
+            <div class="comp-anime-btnBox anime-top-btnBox">
+              <button
+                class="comp-anime-btnBox-btn anime-top-btnBox-btn"
+                data-category="top"
+              >
+                Show More &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Completed Section -->
+      <!-- Completed Section -->
+      <!-- Completed Section -->
+      <!-- Completed Section -->
+      <!-- Completed Section -->
+      <!-- Completed Section -->
+      <!-- Completed Section -->
+      <!-- Completed Section -->
+      <!-- Completed Section -->
+      <!-- Completed Section -->
+      <!-- Completed Section -->
+      <!-- Completed Section -->
+      <!-- Completed Section -->
+      <!-- Completed Section -->
+      <div class="animes-portion animes-completed" id="completed-animes">
+        <div
+          class="animes-portion-backgroundImage animes-completed-backgroundImage"
+        ></div>
+
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <!-- grid which will contain all the previews -->
+        <ul class="comp-anime-grid anime-completed-grid">
+          <div class="comp-anime-heading-box anime-completed-heading-box">
+            <div class="comp-anime-heading anime-completed-heading">
+              Completed
+            </div>
+
+            <div class="comp-anime-heading-line anime-completed-line"></div>
+            <button
+              class="comp-anime-btnBox-btn anime-completed-btnBox-btn"
+              data-category="complete"
+            >
+              Show More &rarr;
+            </button>
+          </div>
+        </ul>
+
+        <div
+          class="animes-portion-bottomLine animes-completed-bottomLine"
+        ></div>
+      </div>
+    </section>
+
+    <section class="promotionalVideos">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- <div class="promotionalVideos-content"> -->
+      <!-- <div class="promotionalVideos-heading">Promotional Videos</div> -->
+
+      <!-- <div class="promotionalVideos-container"> -->
+      <!-- <div
+            class="promotionalVideos-container-box promotionalVideos-container-box-1"
+            data-mal_id="1234"
+          >
+            <div
+              class="promotionalVideos-container-box-thumbnailBox promotionalVideos-container-box-1-thumbnailBox"
+            >
+              <img
+                src="/src/img/Images/thumbnail small.jpg"
+                alt="Video Thumbnail"
+                class="promotionalVideos-container-box-thumbnailBox-thumbnail promotionalVideos-container-box-1-thumbnailBox-thumbnail"
+              />
+
+              <ion-icon
+                class="promotionalVideos-container-box-thumbnailBox-iconPlay promotionalVideos-container-box-1-thumbnailBox-iconPlay"
+                name="play-circle-outline"
+              ></ion-icon>
+
+              <div
+                class="promotionalVideos-container-box-thumbnailBox-thumbnailGradient promotionalVideos-container-box-1-thumbnailBox-thumbnailGradient"
+              ></div>
+            </div>
+            <div
+              class="promotionalVideos-container-box-title promotionalVideos-container-box-1-title"
+            >
+              My Academia World Heroes Mission
+            </div>
+          </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+
+      <!-- BOX BOX BOX BOX BOX BOX BOX BOX BOX -->
+      <!-- BOX BOX BOX BOX BOX BOX BOX BOX BOX -->
+      <!-- BOX BOX BOX BOX BOX BOX BOX BOX BOX -->
+      <!-- BOX BOX BOX BOX BOX BOX BOX BOX BOX -->
+      <!-- BOX BOX BOX BOX BOX BOX BOX BOX BOX -->
+      <!-- BOX BOX BOX BOX BOX BOX BOX BOX BOX -->
+
+      <div
+        class="promotionalVideos-sideImageBox promotionalVideos-sideImageBox-left"
+      >
+        <img
+          src="/src/img/Images/anime-side-right-15.png"
+          alt="Anime Character"
+          class="promotionalVideos-sideImageBox-image"
+        />
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-contentBox">
+        <div class="footer-contentBox-logoAndAbout">
+          <div class="footer-contentBox-logoAndAbout-logoBox">
+            <a href="#" class="footer-contentBox-logoAndAbout-logoBox-link">
+              <img
+                src="/src/img/Logos/animeflo-high-resolution-logo-black-on-transparent-background.png"
+                alt="Logo"
+                class="footer-contentBox-logoAndAbout-logoBox-logo"
+              />
+            </a>
+          </div>
+
+          <div class="footer-contentBox-logoAndAbout-aboutUs">
+            <h3 class="footer-contentBox-logoAndAbout-aboutUs-heading">
+              About Us
+            </h3>
+            <p class="footer-contentBox-logoAndAbout-aboutUs-text">
+              AnimeFlo is an anime website developed as a practice project. Get
+              information on all your favourite anime through this site. Made
+              with love for anime lovers 😊.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-contentBox-grid">
+          <div class="footer-contentBox-grid-famousSites">
+            <h3 class="footer-contentBox-grid-famousSites-heading">
+              &#x2609; Some famous anime websites
+            </h3>
+            <ul class="footer-contentBox-grid-famousSites-list">
+              <li class="footer-contentBox-grid-famousSites-list-item">
+                <a
+                  href="https://9anime.gs/home"
+                  class="footer-contentBox-grid-famousSites-list-item-link"
+                  >&#x2022; 9 anime</a
+                >
+              </li>
+              <li class="footer-contentBox-grid-famousSites-list-item">
+                <a
+                  href="https://aniwatch.to/home"
+                  class="footer-contentBox-grid-famousSites-list-item-link"
+                  >&#x2022; Aniwatch</a
+                >
+              </li>
+              <li class="footer-contentBox-grid-famousSites-list-item">
+                <a
+                  href="https://www3.gogoanimes.fi/"
+                  class="footer-contentBox-grid-famousSites-list-item-link"
+                  >&#x2022; Gogo anime</a
+                >
+              </li>
+              <li class="footer-contentBox-grid-famousSites-list-item">
+                <a
+                  href="https://animixplay.sc/homepage/"
+                  class="footer-contentBox-grid-famousSites-list-item-link"
+                  >&#x2022; AnimixPlay</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-contentBox-grid-madeWith">
+            <h3 class="footer-contentBox-grid-madeWith-heading">
+              &#x2609; Made with
+            </h3>
+            <ul class="footer-contentBox-grid-madeWith-list">
+              <li class="footer-contentBox-grid-madeWith-list-item">
+                &#x2022; HTML
+              </li>
+              <li class="footer-contentBox-grid-madeWith-list-item">
+                &#x2022; CSS
+              </li>
+              <li class="footer-contentBox-grid-madeWith-list-item">
+                &#x2022; Java-script
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-contentBox-grid-contactUs">
+            <h3 class="footer-contentBox-grid-contactUs-heading">
+              &#x2609; Contact Us
+            </h3>
+            <ul class="footer-contentBox-grid-contactUs-list">
+              <li
+                class="footer-contentBox-grid-contactUs-list-item footer-contentBox-grid-contactUs-list-item-phoneNumber"
+              >
+                &#x260E; 0345-7689427
+              </li>
+              <li
+                class="footer-contentBox-grid-contactUs-list-item footer-contentBox-grid-contactUs-list-item-gmail"
+              >
+                &#x2709; Aniflo@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-contentBox-copyright">&copy; Aniflo.com</div>
+        <div class="footer-contentBox-storage">
+          This sight does not any files on its server. All contents are provided
+          by non affliated third parties.
+        </div>
+      </div>
+
+      <div class="footer-imageBox">
+        <img
+          src="/src/img/Images/anime-side-right-1.png"
+          alt="Anime Character"
+          class="footer-imageBox-image"
+        />
+      </div>
+    </section>
+
+    <div class="fullScreenGradient hidden">
+      <div class="promotionalVideos-iframeBox">
+        <iframe
+          frameborder="0"
+          class="promotionalVideos-iframeBox-iframe"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- <div class="spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div> -->
+  </body>
+</html>

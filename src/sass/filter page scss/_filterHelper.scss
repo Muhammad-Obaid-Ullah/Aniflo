@@ -1,0 +1,35 @@
+.bold {
+  font-weight: 600;
+}
+
+.selected {
+  background-color: rgba($color-orange, 0.05);
+  border: 0.2px solid $color-orange;
+  color: $color-orange;
+}
+
+.selectedPage {
+  color: $color-dark;
+  background-color: $color-orange;
+}
+
+.no-results {
+  margin-top: 6rem;
+
+  font-size: 2rem;
+  text-align: center;
+  color: $color-dark--2;
+
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.pagination-padding-bottom {
+  padding: 2rem 2.5rem;
+}
+
+.disable-btn {
+  &:hover {
+    cursor: not-allowed;
+  }
+}
